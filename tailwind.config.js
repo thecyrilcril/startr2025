@@ -11,10 +11,12 @@ export default {
         './resources/views/**/*.blade.php',
     ],
 
+    safelist: [],
+
     theme: {
         extend: {
             fontFamily: {
-                sans: ['Figtree', ...defaultTheme.fontFamily.sans],
+                sans: ['BR Firma', ...defaultTheme.fontFamily.sans],
             },
         },
     },
