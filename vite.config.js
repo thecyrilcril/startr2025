@@ -8,4 +8,17 @@ export default defineConfig({
             refresh: true,
         }),
     ],
+    build: {
+        minify: 'esbuild', // Use esbuild for minification (better tree-shaking)
+        rollupOptions: {
+            output: {
+                manualChunks(id) {
+                    // Custom chunking: separate vendor code
+                    if (id.includes('node_modules')) {
+                        return 'vendor';
+                    }
+                },
+            },
+        },
+    },
 });
