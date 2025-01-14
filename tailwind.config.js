@@ -18,6 +18,9 @@ export default {
             fontFamily: {
                 sans: ['BR Firma', ...defaultTheme.fontFamily.sans],
             },
+            boxShadow: {
+              'mild': '0px 2px 0px rgb(51 77 114 / 5%)',
+            },
         },
     },
 
