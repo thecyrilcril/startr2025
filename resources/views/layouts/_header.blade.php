@@ -54,6 +54,7 @@
                 x-cloak
                 x-show="open"
                 @click.outside="open = false"
+                x-on:keydown.window.escape.prevent.stop="open = false"
                 x-transition.scale-y.origin.top
                 class="bg-sky-400 fixed inset-x-0 z-10 p-4 bg-white rounded-lg shadow-lg mx-auto md:hidden flex flex-col"
             >
