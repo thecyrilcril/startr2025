@@ -51,6 +51,7 @@
                 </div>
             </div>
             <div
+                x-cloak
                 x-show="open"
                 @click.outside="open = false"
                 x-transition.scale-y.origin.top
