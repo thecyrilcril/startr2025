@@ -38,6 +38,9 @@
                 <a href="/" class="flex items-center">
                     <span class="font-bold uppercase">Startr 2025</span>
                 </a>
+                <button class="ml-auto mr-4" @click="$store.darkMode.toggle()">
+                    <x-icons.dark-theme class="w-6 h-6 text-gray-500 dark:text-gray-200 transition-colors" />
+                </button>
                 <div class="grid grid-rows-[1/-1] grid-cols-[1/-1]">
                     <button x-show="!open" @click="open = !open" aria-label="Open main menu" class="inline-flex items-center justify-center p-2 rounded-md text-gray-600 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out">
                         <x-icons.hamburger class="h-6 w-6" />
