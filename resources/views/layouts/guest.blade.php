@@ -13,10 +13,12 @@
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
-    <body class="font-sans text-gray-900 dark:bg-purple-900 dark:text-purple-100 subpixel-antialiased min-h-screen relative grid grid-rows-[auto_1fr_auto]">
+    <body class="font-sans dark:bg-gray-900 dark:text-gray-100 subpixel-antialiased min-h-screen relative grid grid-rows-[auto_1fr_auto]">
         @include('layouts._header')
         <main>
-            {{ $slot }}
+            <div class="px-4 mt-6">
+                {{ $slot }}
+            </div>
         </main>
         @include('layouts._footer')
     </body>

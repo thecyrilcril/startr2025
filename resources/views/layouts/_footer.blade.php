@@ -1,3 +1,5 @@
 <footer>
-    <p>Footer.</p>
+    <div class="px-4">
+        <p>Footer.</p>
+    </div>
 </footer>
